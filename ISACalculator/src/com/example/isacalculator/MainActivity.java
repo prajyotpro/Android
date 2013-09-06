@@ -28,10 +28,10 @@ public class MainActivity extends Activity {
 	Button clear;
 	
 
-	String val;
+	String val = "";
 	//String val2;
 	String op = "";
-	String tot;
+	String tot = "";
 	int num = 0;
 	
 	
@@ -163,25 +163,45 @@ public class MainActivity extends Activity {
 		
 		add.setOnClickListener(new OnClickListener(){
 			public void onClick(View w){
-				op = add.getText().toString(); 
+				if((val == "")&&(tot == "")){
+					Toast msg = Toast.makeText(getBaseContext(),"Enter Number!", 2);
+					msg.show();
+				}else{
+					op = add.getText().toString();
+				}
 			}
 		});
 		
 		sub.setOnClickListener(new OnClickListener(){
 			public void onClick(View w){
-				op = sub.getText().toString(); 
+				if((val == "")&&(tot == "")){
+					Toast msg = Toast.makeText(getBaseContext(),"Enter Number!", 2);
+					msg.show();
+				}else{
+					op = sub.getText().toString();
+				}
 			}
 		});
 		
 		mul.setOnClickListener(new OnClickListener(){
 			public void onClick(View w){
-				op = mul.getText().toString(); 
+				if((val == "")&&(tot == "")){
+					Toast msg = Toast.makeText(getBaseContext(),"Enter Number!", 2);
+					msg.show();
+				}else{
+					op = mul.getText().toString();
+				}
 			}
 		});
 		
 		div.setOnClickListener(new OnClickListener(){
 			public void onClick(View w){
-				op = div.getText().toString(); 
+				if((val == "")&&(tot == "")){
+					Toast msg = Toast.makeText(getBaseContext(),"Enter Number!", 2);
+					msg.show();
+				}else{
+					op = div.getText().toString(); 
+				}
 			}
 		});
 			
