@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">XO1120</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Roll No : 1120, Sub : XO</string>
+
+</resources>
